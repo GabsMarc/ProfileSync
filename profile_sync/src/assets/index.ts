@@ -3,13 +3,19 @@ import instagram from './Instagram_icon.png'
 import wattpad from './wattpad.png'
 import x from './X_icon.svg.png'
 import dreamAmaze from './DreamAmaze.png'
+import user from './user.jpg'
+import background from './background7.jpg'
 
 
-
-export const images = {
+const images = {
     tiktok,
     instagram,
     wattpad,
     x,
-    dreamAmaze
+    dreamAmaze,
+    user,
+    background
 }
+
+
+export default images

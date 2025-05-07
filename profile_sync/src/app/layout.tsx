@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ProfileSync",
   description: "Um site prático de divulgação das suas redes.",
+  icons: {
+    icon: '/profile_sync/public/favicon.ico'
+  }
 };
 
 export default function RootLayout({
