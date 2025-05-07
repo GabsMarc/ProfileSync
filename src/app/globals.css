@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-body{
-  background: white
+body {
+  background: #ffcccb
 }
 
 .scrollbar-hide {

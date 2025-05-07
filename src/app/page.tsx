@@ -48,66 +48,54 @@ const links = [
 
 export default function Home() {
   return (
-    <div className='h-full absolute bg-[#ffcccb] '>
+    <div className='w-[100vw] h-[850px]'>
 
-      <div className='w-[100vw] h-[850px]'>
+      <div className='bg-red-300 absolute z-0 w-[100%] h-[50vh]'>
+        <Image
+          src={images.background}
+          alt=''
+          className="w-[100%] h-[100%] object-cover"
+        />
+      </div>
 
-        <div className='bg-red-300 absolute z-0 w-[100%] h-[50vh]'>
-          <Image
-            src={images.background}
-            alt=''
-            className="w-[100%] h-[100%] object-cover"
-          />
-        </div>
-
-        <div className="w-[100vw] h-[100%] flex flex-col overflow-scrolls 
+      <div className="w-[100vw] h-[100%] flex flex-col overflow-scrolls 
         xl:flex-row
       ">
 
-          <div className='flex-3 content-center justify-items-center z-1
+        <div className='flex-3 content-center justify-items-center z-1
         '>
-            <UserImage />
-            <div className='mt-5 bg-[#ffcccb] rounded-[10px]'>
-              <span className='p-5 text-[18px] font-medium'>@jkkeuphilter</span>
-            </div>
+          <UserImage />
+          <div className='mt-5 bg-[#ffcccb] rounded-[10px]'>
+            <span className='p-5 text-[18px] font-medium'>@jkkeuphilter</span>
           </div>
+        </div>
 
 
-          <div className='flex-4 content-center justify-items-center z-1 '>
-            <div className='bg-[#e7e7e7be] rounded-[25px] justify-items-center pt-[20px] pb-[10px] overflow-scroll scrollbar-hide
+        <div className='flex-4 content-center justify-items-center z-1 '>
+          <div className='bg-[#e7e7e7be] rounded-[25px] justify-items-center pt-[20px] pb-[10px] overflow-scroll scrollbar-hide
             w-[85%] h-[90%]
             sm:w-[65vh] md:w-[70vh] 
             xl:w-[50vh] xl:h-[60vh]
             
           '>
 
-              {
-                links.map((e) => {
-                  return (
-                    <UserLink
-                      key={e.id}
-                      title={e.title}
-                      img={e.img}
-                      link={e.link} />
-                  )
-                })
-              }
+            {
+              links.map((e) => {
+                return (
+                  <UserLink
+                    key={e.id}
+                    title={e.title}
+                    img={e.img}
+                    link={e.link} />
+                )
+              })
+            }
 
-            </div>
           </div>
-
         </div>
-
-        {/* <footer className='bg-black w-[100%] h-[20%] mt-[50px]'>
-
-        <div className=''>
-
-        </div>
-
-      </footer> */}
 
       </div>
-    </div>
 
+    </div>
   )
 }
