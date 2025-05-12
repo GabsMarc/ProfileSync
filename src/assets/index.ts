@@ -5,6 +5,7 @@ import x from './X_icon.svg.png'
 import dreamAmaze from './DreamAmaze.png'
 import user from './user.jpg'
 import background from './background7.jpg'
+import googleDocs from './google-docs.png'
 
 
 const images = {
@@ -14,7 +15,8 @@ const images = {
     x,
     dreamAmaze,
     user,
-    background
+    background,
+    googleDocs
 }
 
 

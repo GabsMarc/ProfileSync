@@ -43,6 +43,12 @@ const links = [
     img: images.dreamAmaze,
     link: 'https://www.instagram.com/selodreamamaze?igsh=cmY2cHR5dTFmaWpu'
   },
+  {
+    id: 7,
+    title: 'Docs - Formulário intenção de compra',
+    img: images.googleDocs,
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdFzYrBGm-t3ySA6LlSskrqDaWylMSDSAhwaT7JJDqOmlmu-g/viewform?usp=header'
+  },
 ]
 
 
